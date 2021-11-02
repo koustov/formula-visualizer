@@ -1,0 +1,22 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.graph-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.graph {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
