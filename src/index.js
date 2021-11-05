@@ -252,9 +252,9 @@ export const FormulaVisualizer = ({
         ctx.beginPath()
         ctx.moveTo(pLocationX, pLocationY)
         ctx.lineTo(item.x + xCenter, yCenter - item.y)
-        console.log(
-          `Prev Point : ${pLocationX},${pLocationY} | new Point${item.x},${item.y}`
-        )
+        // console.log(
+        //   `Prev Point : ${pLocationX},${pLocationY} | new Point${item.x},${item.y}`
+        // )
         pLocationX = item.x + xCenter
         pLocationY = yCenter - item.y
         ctx.stroke()
