@@ -94,7 +94,6 @@ export const FormulaVisualizer = ({
 
   const prepareImageData = () => {
     if (imgData === false) {
-<<<<<<< HEAD
       try {
         var canvas = document.querySelector(`#board`)
         var ctx = canvas.getContext('2d')
@@ -103,12 +102,6 @@ export const FormulaVisualizer = ({
       } catch (err) {
         console.error(`Error getting image data : ${err}`)
       }
-=======
-      var canvas = document.querySelector(`#board`)
-      var ctx = canvas.getContext('2d')
-      iData = ctx.getImageData(0, 0, canvas.width, canvas.height)
-      setImageData(iData)
->>>>>>> 6426ac8b10d742bd27a3a5e9aa6a97fefea36c23
     }
   }
 
@@ -229,14 +222,14 @@ export const FormulaVisualizer = ({
     for (var i = 0; i < linePath.length; i++) {
       const o = linePath[i]
       if (
-        o.x >= xCenter - inX - 2 &&
-        o.x <= xCenter - inX - +2 &&
-        o.y >= inY - yCenter - 2 &&
-        o.y <= inY - yCenter + 2
+        o.x >= inX - xCenter - 5 &&
+        o.x <= inX - xCenter - +5 &&
+        o.y >= yCenter - inY - 5 &&
+        o.y <= yCenter - inY + 5
       ) {
         return {
-          x: xCenter - o.x,
-          y: yCenter + o.y
+          x: (xCenter + o.x).toFixed(2),
+          y: (yCenter - o.y).toFixed(2)
         }
       }
     }

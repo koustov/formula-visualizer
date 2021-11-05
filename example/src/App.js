@@ -15,7 +15,7 @@ const App = () => {
         <FormulaVisualizer
           formula={formula}
           xrange={numberRange(-1000, 1000)}
-          parameters={{ a: 400, b: 50 }}
+          parameters={{ a: 200, b: 50 }}
         />
       </div>
     </div>
