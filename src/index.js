@@ -94,6 +94,7 @@ export const FormulaVisualizer = ({
 
   const prepareImageData = () => {
     if (imgData === false) {
+<<<<<<< HEAD
       try {
         var canvas = document.querySelector(`#board`)
         var ctx = canvas.getContext('2d')
@@ -102,6 +103,12 @@ export const FormulaVisualizer = ({
       } catch (err) {
         console.error(`Error getting image data : ${err}`)
       }
+=======
+      var canvas = document.querySelector(`#board`)
+      var ctx = canvas.getContext('2d')
+      iData = ctx.getImageData(0, 0, canvas.width, canvas.height)
+      setImageData(iData)
+>>>>>>> 6426ac8b10d742bd27a3a5e9aa6a97fefea36c23
     }
   }
 
