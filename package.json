@@ -1,7 +1,7 @@
 {
   "name": "formula-visualizer",
-  "version": "1.0.0",
-  "description": "A simple and convenient way to visualize your formula in two dimentional graph",
+  "version": "0.0.2",
+  "description": "A simple and convenient way to visualize your formula in two dimensional graph",
   "author": "koustov",
   "license": "MIT",
   "repository": "koustov/formula-visualizer",
