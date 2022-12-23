@@ -51,6 +51,6 @@
     "dist"
   ],
   "dependencies": {
-    "js-formula-parser": "latest"
+    "js-formula-parser": "0.0.5"
   }
 }
